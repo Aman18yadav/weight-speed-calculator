@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic clock</title>
+    <link href="10.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="logo">
+            <h><u>WELCOME</u></h>
+            <h1><u>CALCULATOR!!!</u></h1>
+            <hr>
+            <div class="small">
+                <p id="demo"></p>
+                <script src="11.js"></script>
+            </div>
+            <br><br><br>
+            <div class="formstyle">
+                <br>
+                <div class="formstyle2">
+                    
+                    <p>
+                        <label><b>Speed:-</b></label><br>
+                        <input id="inputMPH" type="number" placeholder="MPH" oninput="speedConverter(this.value)" onchange="speedConverter(this.value)">
+</p><br>
+<p>KPH: <span id="outputKPH"></span></p>
+
+<script>
+function speedConverter(valNum) {
+  document.getElementById("outputKPH").innerHTML=valNum*1.609344;
+}
+</script>
+
+                      <br><br><br>
+                      <button class="back"><a href="raj.html">Back</a></button>
+                      
+                    
+                </div>
+                  
+            </div>
+            <br>
+            
+        </div>
+    </div>
+</body>
+</html>

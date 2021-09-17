@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic clock</title>
+    <link href="3.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="logo">
+            <h><u>WELCOME</u></h>
+            <h1><u>CALCULATOR!!!</u></h1>
+            <hr>
+            <div class="small">
+                <p id="demo"></p>
+                <script src="4.js"></script>
+            </div>
+            <br><br><br>
+            <div class="formstyle">
+                <br>
+                <div class="formstyle2">
+                    
+                    <p>
+                        <label><b>Grams:-</b></label><br>
+                        <input id="inputGrams" type="number" placeholder="Grams" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+                      </p>
+                      <br>
+                      <p><b>Kilograms:</b> <span id="outputKilograms"></span></p>
+                      
+                      <script>
+                      function weightConverter(valNum) {
+                        document.getElementById("outputKilograms").innerHTML=valNum/1000;
+                      }
+                      </script>
+                      <br><br><br>
+                      <button class="back"><a href="raj.html">Back</a></button>
+                      
+                    
+                </div>
+                  
+            </div>
+            <br>
+            
+        </div>
+    </div>
+</body>
+</html>
